@@ -91,5 +91,3 @@ if st.button("Calcular preço"):
 if st.button("Salvar peça no banco"):
     salvar_peca(dados, resultado)
     st.success("Peça salva com sucesso!")
-
-

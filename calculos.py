@@ -121,4 +121,3 @@ def calcular_preco(dados):
         "preco_venda": round(preco_venda, 2),
         "lucro": round(preco_venda - custo_total, 2)
     }
-
