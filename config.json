@@ -17,21 +17,4 @@
   "valor_hora_trabalho": 30
 }
 
-{
-  "custos_indiretos_faixa": [
-    {"max_horas": 2, "valor": 6},
-    {"max_horas": 4, "valor": 10},
-    {"max_horas": 6, "valor": 15},
-    {"max_horas": 8, "valor": 20},
-    {"max_horas": 999, "valor": 25}
-  ],
-  "adicionais": {
-    "petg": 3,
-    "multipartes": 5,
-    "lixa": 5,
-    "pintura": 15
-  },
-  "vida_util_horas": 2000,
-  "valor_hora_trabalho": 30
-}
 
