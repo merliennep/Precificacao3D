@@ -14,17 +14,18 @@ def criar_tabela():
     with conectar() as conn:
         cursor = conn.cursor()
         cursor.execute("""
-        CREATE TABLE IF NOT EXISTS pecas (
-            id SERIAL PRIMARY KEY,
-            nome TEXT,
-            material TEXT,
-            peso REAL,
-            tempo REAL,
-            custo_total REAL,
-            preco_venda REAL,
-            lucro REAL,
-            markup REAL,
-            data_criacao TIMESTAMP DEFAULT NOW()
-        )
+        CREATE TABLE pecas (
+        id SERIAL PRIMARY KEY,
+        nome TEXT,
+        material TEXT,
+        peso REAL,
+        tempo REAL,
+        custo_total REAL,
+        preco_venda REAL,
+        lucro REAL,
+        markup REAL,
+        data_criacao TIMESTAMP DEFAULT NOW()
+        );
+
         """)
         conn.commit()
