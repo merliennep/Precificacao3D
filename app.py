@@ -3,6 +3,18 @@ import streamlit as st
 from calculos import calcular_preco
 from banco import criar_tabela, salvar_peca, listar_pecas
 
+usuarios = {
+    "voce": "1234",
+    "noivo": "5678"
+}
+
+user = st.text_input("Usuário")
+senha = st.text_input("Senha", type="password")
+
+if usuarios.get(user) != senha:
+    st.stop()
+
+
 criar_tabela()
 
 
